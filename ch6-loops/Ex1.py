@@ -9,12 +9,13 @@ if number > 0:
         number = number + 3
     else:
         end = 5
+
+    for value in range(0, end):
+        while number % 3 != 0:
+            number += 1
+        print(number)
+        number += 3
+
 else:
     end = None
     print("O programa aceita apenas números maiores que 0.")
-
-for value in range(0, end):
-    while number % 3 != 0:
-        number += 1
-    print(number)
-    number += 3
